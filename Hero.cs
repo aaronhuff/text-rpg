@@ -60,9 +60,7 @@ namespace TextRpg
 
             Console.WriteLine("Congratulations, you have leveled up!\n");
             status();
-
         }
-
 
         public int currentLevel()
         {
@@ -86,7 +84,6 @@ namespace TextRpg
             {
                 Console.WriteLine("You have {0} health remaining.", currentHealth);
             }
-
         }
 
         public int Attack()
@@ -118,7 +115,6 @@ namespace TextRpg
                 status();
                 Console.WriteLine("Would you like to take \"{0}\"? (Armor: {1}) y/n \n", armorLoot.Name(), armorLoot.Value());
 
-
                 char accept = Console.ReadKey().KeyChar;
                 Console.Clear();
 
@@ -131,10 +127,7 @@ namespace TextRpg
                     Console.WriteLine("You have equiped the item!");
                     Console.WriteLine();
                     status();
-
-
-                };
-
+                }
             }
             else if (results == 3)
             {
@@ -144,7 +137,6 @@ namespace TextRpg
                 Weapon weaponLoot = new Weapon(level);
                 status();
                 Console.WriteLine("Would you like to take \"{0}\"? (Damage: {1}) y/n \n", weaponLoot.Name(), weaponLoot.Damage());
-
 
                 char accept = Console.ReadKey().KeyChar;
                 Console.Clear();
@@ -158,12 +150,7 @@ namespace TextRpg
                     Console.WriteLine("You have equiped the item!");
                     status();
                 }
-
-
             }
-
-
-
         }
 
         public int getExp()
@@ -175,6 +162,5 @@ namespace TextRpg
         {
             return helmetArmor + bootsArmor + chestArmor;
         }
-
     }
 }
