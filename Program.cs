@@ -79,7 +79,6 @@ namespace TextRpg
                             enemy.Attacked(player.Attack());
                             Console.WriteLine();
                         }
-
                     }
                     Console.WriteLine("Press to continue...\n");
                     Console.ReadKey();
