@@ -33,7 +33,6 @@ namespace TextRpg
 
             while (player.Alive() == true)
             {
-
                 int monsterType = rnd2.Next(0, 3);
                 bool attackFirst = Convert.ToBoolean(rnd2.Next(0, 2));
                 Monster enemy = new Monster(player.currentLevel(), monsterType);
@@ -61,18 +60,14 @@ namespace TextRpg
 
                     if (attackFirst == true)
                     {
-
                         enemy.Attacked(player.Attack());
                         Console.WriteLine();
-
-
 
                         if (enemy.Alive() == true)
                         {
                             player.Attacked(enemy.Attack(player.armor()));
                             Console.WriteLine();
                         }
-
                     }
                     else
                     {
@@ -90,7 +85,6 @@ namespace TextRpg
                     Console.ReadKey();
                 }
 
-
                 if (player.Alive() == false) { break; }
 
                 Console.Clear();
@@ -106,15 +100,10 @@ namespace TextRpg
 
                 Console.WriteLine("Press to continue...\n");
                 Console.ReadKey();
-
             }
-
 
             Console.Clear();
             Console.WriteLine("Game over, you have died");
-
         }
-
     }
 }
-

@@ -34,7 +34,6 @@ namespace TextRpg
                 Console.WriteLine("The level {0} {1} has {2} health remaining.", lvl, type, health);
             else
                 Console.WriteLine("The {0} has been killed!", type);
-
         }
 
         public int Attack(int heroArmor)
@@ -52,7 +51,6 @@ namespace TextRpg
                 Console.WriteLine("The level {0} {1} attacks but your armor blocks it!", lvl, type);
                 return 0;
             }
-
             // return damage done
         }
 
@@ -80,8 +78,5 @@ namespace TextRpg
         {
             return health;
         }
-
-
-
     }
 }
