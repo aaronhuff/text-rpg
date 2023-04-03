@@ -20,9 +20,6 @@ namespace TextRpg
         private string material;
         private string characteristic;
 
-
-
-
         public Armor(int CurrentLevel)
         {
             armorValue = rnd4.Next(0, 20) + (CurrentLevel * 5);

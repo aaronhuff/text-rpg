@@ -146,7 +146,6 @@ namespace TextRpg
                     weaponName = weaponLoot.Name();
                     weaponDamage = weaponLoot.Damage();
 
-
                     Console.WriteLine("You have equiped the item!");
                     status();
                 }
